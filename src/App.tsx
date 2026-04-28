@@ -11,10 +11,10 @@ import Home from './pages/Home';
 import Models from './pages/Models';
 import Experience from './pages/Experience';
 
-// Placeholder pages for brevity
-const Store = () => <div className="pt-40 pb-20 container mx-auto px-6 h-[80vh] flex items-center justify-center text-white/20 uppercase tracking-[0.4em] italic font-bmw glass text-4xl">Store Coming Soon</div>;
-const Services = () => <div className="pt-40 pb-20 container mx-auto px-6 h-[80vh] flex items-center justify-center text-white/20 uppercase tracking-[0.4em] italic font-bmw glass text-4xl">Services Coming Soon</div>;
-const FAQ = () => <div className="pt-40 pb-20 container mx-auto px-6 h-[80vh] flex items-center justify-center text-white/20 uppercase tracking-[0.4em] italic font-bmw glass text-4xl">FAQ Coming Soon</div>;
+import Store from './pages/Store';
+import Services from './pages/Services';
+import FAQ from './pages/FAQ';
+
 const Account = () => <div className="pt-40 pb-20 container mx-auto px-6 h-[80vh] flex items-center justify-center text-white/20 uppercase tracking-[0.4em] italic font-bmw glass text-4xl">Account Coming Soon</div>;
 
 function AppContent() {

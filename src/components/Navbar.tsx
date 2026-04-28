@@ -4,6 +4,8 @@ import { Menu, X, ShoppingCart, User, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '../lib/utils';
 
+import BmwLogo from './BmwLogo';
+
 const navItems = [
   { name: 'Models', href: '/models' },
   { name: 'Store', href: '/store' },
@@ -31,11 +33,14 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="group flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-            <span className="text-white font-bmw font-black text-xl italic">B</span>
-          </div>
-          <span className="text-white font-bmw font-bold tracking-[0.2em] uppercase text-sm hidden md:block">
+        <Link to="/" className="group flex items-center gap-4">
+          <motion.div 
+            whileHover={{ rotate: 15 }}
+            className="transition-transform"
+          >
+            <BmwLogo size={42} />
+          </motion.div>
+          <span className="text-white font-bmw font-black tracking-[0.3em] uppercase text-xl italic group-hover:text-primary transition-colors">
             BMW
           </span>
         </Link>
